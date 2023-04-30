@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,700');
+[data-tab-content] {
+    display: none;
+}
+  
+.active[data-tab-content] {
+  display: block;
+}
+
+/* ------------------- */
+/* Custome properties  */
+/* ------------------- */
+
+
+
+
+.list li > a, .social a > i {
+  color: var(--foreground);
+}
+
+.social {
+  padding: 0.5em 0;
+}
+
+.tabs, .list {
+  display: flex;
+  gap: var(--gap, 1rem);
+  list-style-type: none;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab:hover {
+  background-color: var(--clr-hover);
+}
+
+.page-content {
+  margin: 20px 20px;
+  min-height: calc(100vh - 95px);
+}
+
+
+
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  text-decoration: strong;
+  margin-top:2em;
+}
+
+.guide-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 0.5rem;
+  margin-inline: auto;
+}
+
+.guide-item{
+  padding: 0;
+  max-width: 30em;
+  flex:1;
+}
+
+.number h1{
+  text-align: center;
+  color: var(--foreground);
+  border-radius: 50%;
+  display:inline;
+} 
+
+.guide-content {
+  box-shadow: var(--shadow);
+  text-align: center;
+  justify-content:center;
+  padding: 1em 1em;
+}
+
+.guide-content img {
+  max-width: 5em;
+  max-height: 5em;
+  object-fit:cover;
+}
+
+.manual img{
+  padding: 1em 0;
+}
+.guide-content > p {
+  margin:0.5em;
+}
+
+h3,p{
+  font-size: 1.5rem;
+}
+
+.container {
+  padding-inline: 2rem;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+@media screen and (max-width: 620px){
+  .guide-container{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 620px) and (max-width: 1000px){
+  .guide-container{
+    align-items:center
+  }
+}
+
+
+
+
